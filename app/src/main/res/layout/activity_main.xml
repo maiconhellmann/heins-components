@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryText"
+                    android:text="@string/materials_item_row"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"/>
+
+                <br.com.forusers.heinscomponents.MaterialsItemRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftImage="@drawable/ic_attachment"
+                    app:hint="@string/attachment"
+                    app:text="@string/attachment_file"
+                    />
+                <br.com.forusers.heinscomponents.MaterialsItemRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftImage="@drawable/ic_cloud"
+                    app:hint="@string/cloud"
+                    app:text="@string/cloud_file"
+                    app:showSeparator="false"
+                    app:editable="false"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryText"
+                    android:text="@string/glide_image_view"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:onClick="setUriGlideImageView"
+                        android:text="@string/set_uri"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Base.Widget.AppCompat.Button.Colored"
+                        android:text="@string/clear"
+                        android:onClick="clearGlideImageView"/>
+                </LinearLayout>
+
+                <br.com.forusers.heinscomponents.GlideImageView
+                    android:id="@+id/glideImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

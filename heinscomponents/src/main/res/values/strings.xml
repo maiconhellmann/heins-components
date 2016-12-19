@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Heins Components</string>
+
+    <color name="black_transparent">#B2000000</color>"
+
+    <color name="primaryText">#DE000000</color>
+    <color name="secondaryText">#8A000000</color>
+    <color name="disableText">#1F000000</color>
+    <color name="hintText">#1F000000</color>
+</resources>

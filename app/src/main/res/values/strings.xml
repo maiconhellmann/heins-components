@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Heins Components</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="glide_image_view">GlideImageView</string>
+    <string name="materials_item_row">MaterialsItemRow</string>
+    <string name="set_uri">Set URI</string>
+    <string name="clear">Clear</string>
+    <string name="attachment">Attachment</string>
+    <string name="attachment_file">Yourfile.pdf</string>
+    <string name="cloud">Cloud</string>
+    <string name="cloud_file">YourCloudFile.pdf</string>
+</resources>
