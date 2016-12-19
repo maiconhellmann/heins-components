@@ -169,7 +169,7 @@ public class MaterialsItemRow extends RelativeLayout {
                 mRightImage.setAlpha(0.7f);
             }
 
-            margin72 = (int) getResources().getDimension(R.dimen.itemRow_margin);
+            margin72 = (int) getResources().getDimension(R.dimen.itemRow_height);
 
 //        setPadding(leftPadding, 0 , rightPadding, 0);
 

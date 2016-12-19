@@ -4,6 +4,7 @@
 
     <string name="glide_image_view">GlideImageView</string>
     <string name="materials_item_row">MaterialsItemRow</string>
+    <string name="materials_switcher_row">MaterialsSwitcherRow</string>
     <string name="set_uri">Set URI</string>
     <string name="clear">Clear</string>
     <string name="attachment">Attachment</string>

@@ -3,12 +3,15 @@
 
     <declare-styleable name="DefaultAttrs">
         <attr name="text" format="string" localization="suggested" />
+        <attr name="primaryText" format="string" localization="suggested" />
+        <attr name="secondaryText" format="string" localization="suggested" />
         <attr name="hint" format="string" localization="suggested" />
         <attr name="editable" format="boolean" localization="suggested" />
         <attr name="textColorMS" format="reference" localization="suggested" />
         <attr name="textColorHintMS" format="reference" localization="suggested" />
         <attr name="rightImage" format="reference" localization="suggested" />
         <attr name="leftImage" format="reference" localization="suggested" />
+        <attr name="showSeparator" format="boolean"  localization="suggested" />
     </declare-styleable>
 
     <declare-styleable name="ExtendedCardView">
@@ -25,12 +28,20 @@
         <attr name="textColorMS"/>
         <attr name="textColorHintMS"/>
         <attr name="rightImage"/>
+        <attr name="showSeparator"/>
         <attr name="leftImage"/>
-        <attr name="showSeparator" format="boolean"  localization="suggested" />
         <attr name="marginRight" format="boolean"  localization="suggested" />
         <attr name="marginLeft" format="boolean"  localization="suggested" />
     </declare-styleable>
     <declare-styleable name="GlideImageView">
         <attr name="placeholder" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialsSwitcherRow">
+        <attr name="primaryText"/>
+        <attr name="secondaryText" />
+        <attr name="leftImage"/>
+        <attr name="showSeparator"/>
+        <attr name="textColor" format="reference" />
     </declare-styleable>
 </resources>

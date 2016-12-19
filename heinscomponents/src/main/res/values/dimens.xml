@@ -3,6 +3,6 @@
     <dimen name="drawable_small">24dp</dimen>
     <dimen name="drawable_medium">32dp</dimen>
     <dimen name="drawable_large">56dp</dimen>
-    <dimen name="itemRow_margin">72dp</dimen>
+    <dimen name="itemRow_height">72dp</dimen>
     <dimen name="MaterialsItemRow_margin_right">16dp</dimen>
 </resources>

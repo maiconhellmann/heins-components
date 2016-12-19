@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/itemRow_height">
+
+    <FrameLayout
+        android:id="@+id/materialsSwitcherRow_imageLayout"
+        android:layout_width="@dimen/itemRow_height"
+        android:layout_height="@dimen/itemRow_height">
+        <ImageView
+            android:id="@+id/materialsSwitcherRow_imageview"
+            android:layout_width="@dimen/drawable_medium"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/materialsSwitcherRow_textLayout"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/materialsSwitcherRow_imageLayout"
+        android:layout_toLeftOf="@+id/materialsSwitcherRow_switcher"
+        android:layout_height="@dimen/itemRow_height"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/materialsSwitcherRow_textPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/primaryText"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/materialsSwitcherRow_textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="12sp"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/itemRow_height"
+        android:layout_height="@dimen/itemRow_height"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/materialsSwitcherRow_switcher" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/MaterialsSwitcherRow_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/itemRow_height"
+        android:layout_marginLeft="@dimen/itemRow_height"/>
+</RelativeLayout>

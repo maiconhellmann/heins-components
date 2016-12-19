@@ -5,60 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="72dp">
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/MaterialsItemRow_layoutLeftImage"
-        android:layout_width="wrap_content"
-        android:layout_height="72dp"
-        android:visibility="gone">
+        android:layout_width="@dimen/itemRow_height"
+        android:layout_height="@dimen/itemRow_height"
+        android:gravity="center">
         <ImageView
             android:id="@+id/MaterialsItemRow_leftImage"
             android:layout_width="@dimen/drawable_medium"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="24dp"/>
-    </FrameLayout>
-    <TextView
-        android:id="@+id/MaterialsItemRow_hint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/MaterialsItemRow_value"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_toLeftOf="@+id/MaterialsItemRow_rightImage"
-        android:layout_toRightOf="@+id/MaterialsItemRow_layoutLeftImage"
-        android:labelFor="@+id/MaterialsItemRow_value"
-        android:lines="1"
-        android:textColor="@color/secondaryText"
-        android:textSize="12sp"/>
-    <TextView
-        android:id="@+id/MaterialsItemRow_value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/MaterialsItemRow_hint"
-        android:layout_toLeftOf="@+id/MaterialsItemRow_rightImage"
-        android:layout_toRightOf="@+id/MaterialsItemRow_layoutLeftImage"
-        android:lines="1"
-        android:textColor="@color/primaryText"
-        android:textSize="16sp"/>
+            android:src="@drawable/ic_camera"
+            />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemRow_height"
+        android:orientation="vertical"
+        android:gravity="center|center_vertical"
+        android:layout_marginRight="@dimen/itemRow_height"
+        android:layout_marginLeft="@dimen/itemRow_height">
+
+        <TextView
+            android:id="@+id/MaterialsItemRow_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:lines="1"
+            android:textColor="@color/primaryText"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/MaterialsItemRow_value"
+            android:layout_width="match_parent"
+            android:text="@string/app_name"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/itemRow_height"
+        android:layout_height="@dimen/itemRow_height"
+        android:gravity="center"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/MaterialsItemRow_rightImage"
+            android:layout_width="@dimen/drawable_small"
+            android:layout_height="@dimen/drawable_small"
+            android:src="@drawable/ic_edit"/>
+    </LinearLayout>
     <View
         android:id="@+id/MaterialsItemRow_separator"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/hintText"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/MaterialsItemRow_value"
-        android:layout_alignStart="@+id/MaterialsItemRow_value"
-        android:layout_alignRight="@+id/MaterialsItemRow_rightImage"
-        android:layout_alignEnd="@+id/MaterialsItemRow_rightImage"/>
-    <ImageView
-        android:id="@+id/MaterialsItemRow_rightImage"
-        android:layout_width="@dimen/drawable_small"
-        android:layout_height="@dimen/drawable_small"
-        android:visibility="invisible"
-        android:layout_alignBottom="@+id/MaterialsItemRow_value"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/MaterialsItemRow_value"/>
-
+        android:layout_marginLeft="@dimen/itemRow_height"
+        android:layout_marginRight="@dimen/itemRow_height"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
