@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide;
 import br.com.forusers.heinscomponents.GlideImageView;
 import br.com.forusers.heinscomponents.MaterialsItemRow;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private GlideImageView glideImageView;
 
@@ -22,17 +22,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         glideImageView = (GlideImageView)findViewById(R.id.glideImageView);
+
+        findViewById(R.id.mainActivity_setUri).setOnClickListener(this);
+        findViewById(R.id.mainActivity_clear).setOnClickListener(this);
     }
 
-    public void setUriGlideImageView(View view) {
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.mainActivity_clear){
+            onClickClearImage();
+        }else if(v.getId() == R.id.mainActivity_setUri){
+            onClickSetUri();
+        }
+    }
+
+    private void onClickSetUri() {
         glideImageView.setSkypMemoryCache(true);
         glideImageView.setImageUri("http://www.w3schools.com/css/img_fjords.jpg");
     }
 
-    public void clearGlideImageView(View view) {
-
+    private void onClickClearImage() {
         new ClearCacheAsyncTask(glideImageView.getImgView().getContext()).execute();
-
         glideImageView.setPlaceHolderImage();
     }
 

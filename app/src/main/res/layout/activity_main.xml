@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,18 +120,18 @@
                     android:gravity="center">
 
                     <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mainActivity_setUri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/Base.Widget.AppCompat.Button.Colored"
-                        android:onClick="setUriGlideImageView"
                         android:text="@string/set_uri"/>
 
                     <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/mainActivity_clear"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/Base.Widget.AppCompat.Button.Colored"
-                        android:text="@string/clear"
-                        android:onClick="clearGlideImageView"/>
+                        android:text="@string/clear"/>
                 </LinearLayout>
 
                 <br.com.forusers.heinscomponents.GlideImageView
